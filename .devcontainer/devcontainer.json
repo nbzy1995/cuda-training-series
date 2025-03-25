@@ -1,0 +1,17 @@
+{
+    "name": "CUDA C++ Dev Environment",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": "."
+    },
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      "ms-vscode.cpptools",
+      "ms-vscode.cmake-tools"
+    ],
+    "postCreateCommand": "mkdir -p build",
+    "remoteUser": "vscode"
+  }
+  
